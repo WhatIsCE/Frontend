@@ -10,12 +10,14 @@ import { NoteService } from '../note.service';
 export class NoteComponent implements OnInit {
 
   notes: Note[];
-  selectedIndex = 0;
+  selectedIndex: number = 0;
+
+  isLoaded: Boolean = false;
 
   constructor(private noteService: NoteService) { }
 
   ngOnInit() {
     this.noteService.getNotes()
-      .subscribe(notes => this.notes = notes);
+      .subscribe(notes => { this.notes = notes; this.isLoaded = true; console.log(this.notes) });
   }
 }
