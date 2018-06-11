@@ -6,15 +6,15 @@
 
       </h3>
       <nav class="nav nav-sitehead justify-content-center">
-        <a class="nav-link active" href="#">خانه</a>
-        <a class="nav-link" href="#">این چیست؟</a>
-        <a class="nav-link" href="#">تماس با ما</a>
+        <a class="nav-link active" routerLink="/">خانه</a>
+        <a class="nav-link" routerLink="/about">این چیست؟</a>
+        <a class="nav-link" routerLink="/contact">تماس با ما</a>
       </nav>
     </div>
   </header>
 
   <main role="main" class="inner cover">
-    <app-note class="contents">loading...</app-note>
+    <router-outlet></router-outlet>
 
 
   </main>
