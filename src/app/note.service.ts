@@ -11,7 +11,7 @@ import { Note } from './note';
   providedIn: "root"
 })
 export class NoteService {
-  private notesUrl = "http://cactb.ir/wise/notes/all/limit/30";
+  private notesUrl = "https://thesepehrm.com/wice/notes/all/limit/30";
   constructor(private http: HttpClient) {}
 
   getNotes(): Observable<Note[]> {
