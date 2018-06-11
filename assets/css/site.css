@@ -166,6 +166,18 @@ body {
     }
 }
 
+@media (max-width: 42em) {
+    .contents h1 {
+        font-size: 1.5rem;
+    }
+    .contents h3 {
+        font-size: 0.75rem;
+    }
+    .cover-container {
+        width: 100%;
+    }
+}
+
 /*
  * Cover
  */
