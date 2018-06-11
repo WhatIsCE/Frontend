@@ -1,4 +1,4 @@
-<div class="tweet" *ngFor="let note of notes; let isFirst = first" [class.active]="isFirst">
-  <h1 class="cover-heading">{{note.content}}</h1>
-  <h3 class="lead">{{note.author}}</h3>
+<div class="tweet active">
+  <h1 class="cover-heading">{{notes[selectedIndex].content}}</h1>
+  <h3 class="lead">{{notes[selectedIndex].author}}</h3>
 </div>
