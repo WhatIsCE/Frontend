@@ -4,7 +4,6 @@ import { catchError } from "rxjs/operators";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 import { Note } from './note';
-import { NOTES } from './mock-notes';
 
 
 
